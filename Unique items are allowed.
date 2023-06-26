@@ -1,0 +1,13 @@
+function removeDuplicates(array) {
+  // Create a new Set and add the array elements to it
+  const uniqueSet = new Set(array);
+
+  // Convert the Set back to an array
+  const uniqueArray = Array.from(uniqueSet);
+
+  return uniqueArray;
+}
+// We can use this function by passing an array of numbers as an argument, like this
+const numbers = [1, 2, 3, 4, 3, 2, 1, 5];
+const uniqueNumbers = removeDuplicates(numbers);
+console.log(uniqueNumbers);
