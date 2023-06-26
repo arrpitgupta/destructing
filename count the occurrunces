@@ -1,0 +1,19 @@
+function countWords(text) {
+  // Create an empty Map to store the word counts
+  const wordCounts = new Map();
+
+  // Split the text into individual words
+  const words = text.split(' ');
+
+  // Iterate through each word
+  for (const word of words) {
+    // Update the word count in the Map
+    const count = wordCounts.get(word) || 0;
+    wordCounts.set(word, count + 1);
+  }
+
+  return wordCounts;
+}
+const text = "Hello world! This is a sample text. Hello again!";
+const result = countWords(text);
+console.log(result);
