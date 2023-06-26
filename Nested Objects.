@@ -1,0 +1,17 @@
+function extractPersonInfo(person) {
+  const { name, address: { street } } = person;
+  return { name, street };
+}
+const person = {
+  name: 'Mithun',
+  age:21,
+  address: {
+    street: 'b8, block B, industrial area',
+    city: 'Sector 62, Noida',
+    state: 'uttarpradesh'
+  }
+};
+
+const { name, street } = extractPersonInfo(person);
+console.log(name);   // Output: Mithun
+console.log(street); // Output: b8, block B, industrial area
