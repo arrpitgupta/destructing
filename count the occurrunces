@@ -14,6 +14,7 @@ function countWords(text) {
 
   return wordCounts;
 }
+// we can use this function by passing a string of text as an argument, like this
 const text = "Hello world! This is a sample text. Hello again!";
 const result = countWords(text);
 console.log(result);
