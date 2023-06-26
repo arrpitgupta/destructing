@@ -1,0 +1,8 @@
+function findMinMax(array) {
+  const max = Math.max(...array);
+  const min = Math.min(...array);
+  return { max, min };
+}
+const numbers = [5, 2, 7, 1, 9];
+const result = findMinMax(numbers);
+console.log(result);
